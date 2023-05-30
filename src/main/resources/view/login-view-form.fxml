@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginWindow" prefHeight="509.0" prefWidth="764.0" style="-fx-background-color: none; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carepoint.controller.LoginViewFormController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="700.0" layoutX="72.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/Transparent-waterdrop-Realistic-water-d-Graphics-32369828-1-580x387-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUsername" layoutX="430.0" layoutY="228.0" onAction="#txtUsernameOnAction" prefHeight="25.0" prefWidth="200.0" />
+      <Label focusTraversable="false" layoutX="320.0" layoutY="225.0" prefHeight="31.0" prefWidth="74.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="430.0" layoutY="274.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="200.0" />
+      <Label focusTraversable="false" layoutX="320.0" layoutY="271.0" prefHeight="31.0" prefWidth="74.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" focusTraversable="false" layoutX="386.0" layoutY="331.0" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="149.0" ripplerFill="#0a0a0a" style="-fx-background-color: #0B2447; -fx-background-radius: 20;" text="Login" textFill="#f8f8f8" wrapText="true">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="74.0" layoutY="21.0" prefHeight="43.0" prefWidth="344.0" text="Care to protect your health" textFill="#181346">
+         <font>
+            <Font name="Bodoni MT" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="64.0" prefHeight="99.0" prefWidth="259.0" text="Welcome" textFill="#181346">
+         <font>
+            <Font name="Bernard MT Condensed" size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="138.0" prefHeight="43.0" prefWidth="43.0" text="to" textFill="#181346">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="174.0" prefHeight="51.0" prefWidth="158.0" text="Carepoint" textFill="#181346">
+         <font>
+            <Font name="Bernard MT Condensed" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="215.0" prefHeight="51.0" prefWidth="259.0" text="Pharmacy Management System" textFill="#181346">
+         <font>
+            <Font name="Bodoni MT Condensed" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="224.0" fitWidth="288.0" layoutX="-5.0" layoutY="276.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/wepik-export-20230428031526.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="653.0" prefWidth="1115.0" style="-fx-background-color: none; -fx-background-radius: 25; -fx-border-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carepoint.controller.EmployeeViewFormController">
+   <children>
+      <AnchorPane fx:id="employeeWindowA2" layoutX="31.0" layoutY="87.0" prefHeight="261.0" prefWidth="1054.0" style="-fx-background-radius: 25; -fx-background-color: linear-gradient(to top,#86c6e3,#adc3da,#dfe0e0);">
+         <children>
+            <Label layoutX="72.0" layoutY="14.0" prefHeight="25.0" prefWidth="101.0" style="-fx-font-weight: bold;" text="Employee Id">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployeeId" layoutX="290.0" layoutY="14.0" onAction="#txtEmployeeIdOnAction" prefHeight="25.0" prefWidth="186.0" />
+            <Label layoutX="73.0" layoutY="58.0" prefHeight="23.0" prefWidth="78.0" style="-fx-font-weight: bold;" text="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployeeAddress" layoutX="290.0" layoutY="58.0" onAction="#txtEmployeeAddressOnAction" prefHeight="25.0" prefWidth="186.0" />
+            <Label layoutX="72.0" layoutY="109.0" prefHeight="25.0" prefWidth="135.0" style="-fx-font-weight: bold;" text="Contact Number">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployeeContactNumber" layoutX="290.0" layoutY="109.0" onAction="#txtEmployeeContactNumberOnAction" prefHeight="25.0" prefWidth="186.0" />
+            <Label layoutX="660.0" layoutY="14.0" prefHeight="23.0" prefWidth="78.0" style="-fx-font-weight: bold;" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployeeName" layoutX="799.0" layoutY="14.0" onAction="#txtEmployeeNameOnAction" prefHeight="25.0" prefWidth="187.0" />
+            <Label layoutX="660.0" layoutY="58.0" prefHeight="23.0" prefWidth="78.0" style="-fx-font-weight: bold;" text="Salary">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployeeSalary" layoutX="799.0" layoutY="58.0" onAction="#txtEmployeeSalaryOnAction" prefHeight="25.0" prefWidth="187.0" />
+            <Button fx:id="btnAddEmployee" layoutX="72.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnAddEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-background-color: #394867;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdateEmployee" layoutX="220.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnUpdateEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-background-color: #394867;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDeleteEmployee" layoutX="374.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnDeleteEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-background-color: #394867;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearchEmployee" layoutX="525.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnSearchEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-background-color: #394867;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="73.0" layoutY="162.0" style="-fx-font-weight: bold;" text="Age">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployeeAge" layoutX="290.0" layoutY="162.0" onAction="#txtEmployeeAgeOnAction" prefHeight="25.0" prefWidth="186.0" />
+            <Button fx:id="btnGetREpotEmployee" layoutX="866.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnGetREpotEmployee" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #9BA4B5; -fx-background-radius: 20;" text="Get Report">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="31.0" prefHeight="46.0" prefWidth="291.0" text="Employee">
+         <font>
+            <Font size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8761904761904762">
+               <stops>
+                  <Stop color="#005380" />
+                  <Stop color="#005380" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="tblEmployee" layoutX="31.0" layoutY="369.0" prefHeight="270.0" prefWidth="1048.0" style="-fx-border-color: #212A3E; -fx-background-color: #9BA4B5; -fx-background-radius: 20;">
+        <columns>
+          <TableColumn fx:id="colEmployeeId" prefWidth="164.0" text="Employee Id" />
+          <TableColumn fx:id="colEmployeeName" minWidth="0.0" prefWidth="141.0" text="Name" />
+            <TableColumn fx:id="colEmployeeAge" prefWidth="143.0" text="Age" />
+            <TableColumn fx:id="colEmployeeAddress" prefWidth="104.0" text="Address" />
+            <TableColumn fx:id="colEmployeeSalary" prefWidth="143.0" text="Salary" />
+            <TableColumn fx:id="colEmployeeContactNumber" prefWidth="183.0" text="Contact Number" />
+            <TableColumn fx:id="colEmployeeAction" prefWidth="169.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

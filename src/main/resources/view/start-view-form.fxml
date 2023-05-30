@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="StartWindow" prefHeight="471.0" prefWidth="764.0" style="-fx-background-radius: 50; -fx-background-color: none;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carepoint.controller.StartViewFormController">
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="764.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/pxfuel%20(2).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="343.0" fitWidth="474.0" layoutX="290.0" layoutY="128.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/pxfuel__1_-removebg-preview-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnStart" layoutX="24.0" layoutY="342.0" onAction="#btnStartOnAction" opacity="0.66" prefHeight="41.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-background-color: white;" text="Get Started">
+         <ripplerFill>
+            <RadialGradient centerX="0.4388888888888889" centerY="0.5" focusAngle="83.66" radius="0.5">
+               <stops>
+                  <Stop color="#73108f81" />
+                  <Stop color="#114d8f" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <effect>
+            <BoxBlur height="0.0" iterations="0" width="0.0">
+               <input>
+                  <DropShadow>
+                     <input>
+                        <MotionBlur />
+                     </input>
+                  </DropShadow>
+               </input>
+            </BoxBlur>
+         </effect>
+         <font>
+            <Font size="22.0" />
+         </font></JFXButton>
+      <AnchorPane layoutX="14.0" layoutY="14.0" opacity="0.87" prefHeight="278.0" prefWidth="344.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="14.0" layoutY="29.0" prefHeight="60.0" prefWidth="312.0" style="-fx-font-weight: bold;" text="Protect your health">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

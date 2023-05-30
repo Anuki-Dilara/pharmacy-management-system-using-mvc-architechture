@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashboardWindowA1" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-radius: 25; -fx-background-color: linear-gradient(to bottom,#86c6e3,#adc3da,#dfe0e0); -fx-border-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carepoint.controller.DashboardViewFormController">
+   <children>
+      <ImageView fitHeight="785.0" fitWidth="1448.0" layoutY="-14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/4861669.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="DashboardWindowA3" layoutX="233.0" layoutY="50.0" prefHeight="635.0" prefWidth="1091.0" styleClass="div" stylesheets="@../Stylesheet/stylesheet.css">
+         <children>
+            <LineChart fx:id="mainChart" layoutX="298.0" layoutY="75.0" prefHeight="486.0" prefWidth="753.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <ImageView fitHeight="366.0" fitWidth="264.0" layoutX="34.0" layoutY="269.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/pharmacy-4753342_1920-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="DashboardWindowA2" layoutX="14.0" layoutY="14.0" opacity="0.83" prefHeight="671.0" prefWidth="203.0">
+         <style>-fx-background-color: linear-gradient(to right,#040621,#050f2b,#0b113b); -fx-background-radius: 25;</style>
+         <children>
+            <JFXButton fx:id="btnEmployee" layoutX="57.0" layoutY="205.0" onAction="#btnEmployeeOnAction" prefHeight="71.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnCustomers" layoutX="57.0" layoutY="109.0" maxHeight="119.0" minWidth="114.0" onAction="#btnCustomersOnAction" prefHeight="119.0" prefWidth="136.0" styleClass="btnCustomers" stylesheets="@../Stylesheet/stylesheet.css" textAlignment="RIGHT">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnMedicine" layoutX="57.0" layoutY="306.0" onAction="#btnMedicineOnAction" prefHeight="71.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnOrders" layoutX="59.0" layoutY="412.0" onAction="#btnOrdersOnAction" prefHeight="71.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnSupplier" layoutX="58.0" layoutY="516.0" onAction="#btnSupplierOnAction" prefHeight="71.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
+            <JFXButton fx:id="btnLogout" layoutX="38.0" layoutY="617.0" onAction="#btnLogoutOnAction" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnDashboard" buttonType="RAISED" layoutX="56.0" layoutY="14.0" onAction="#btnDashboardOnAction" prefHeight="71.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="59.0" layoutY="114.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/perspective_matte-39-128x128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="58.0" layoutX="65.0" layoutY="311.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/perspective_matte-368-128x128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="70.0" layoutX="65.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/perspective_matte-421-128x128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="59.0" layoutY="209.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/perspective_matte-26-128x128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="58.0" layoutX="65.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/perspective_matte-21-128x128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="52.0" layoutX="61.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/perspective_matte-14-128x128.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="85.0" text="Dashboard" textFill="WHITE" />
+            <Label layoutX="74.0" layoutY="180.0" text="Customer" textFill="WHITE" />
+            <Label layoutX="76.0" layoutY="276.0" text="Employees" textFill="WHITE" />
+            <Label layoutX="78.0" layoutY="377.0" text="Medicine" textFill="WHITE" />
+            <Label layoutX="84.0" layoutY="483.0" text="Orders" textFill="WHITE" />
+            <Label layoutX="80.0" layoutY="587.0" text="Suppliers" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="1244.0" layoutY="14.0" prefHeight="33.0" prefWidth="177.0" textFill="#070b54">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

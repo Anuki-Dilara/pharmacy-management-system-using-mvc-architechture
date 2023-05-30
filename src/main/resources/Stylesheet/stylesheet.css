@@ -1,0 +1,17 @@
+.btnCustomers{
+    -fx-background-color:  #d2dae2;
+    -fx-background-radius: 20;
+    -fx-min-width: 95px;
+    -fx-min-height: 71px;
+    -fx-max-width: 95px;
+    -fx-max-height: 71px;
+}
+.lbl{
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.div{
+    -fx-background-radius: 25;
+}
+

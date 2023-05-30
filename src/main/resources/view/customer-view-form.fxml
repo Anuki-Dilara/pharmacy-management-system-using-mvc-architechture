@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerWindow" prefHeight="653.0" prefWidth="1115.0" style="-fx-background-color: none; -fx-background-radius: 25; -fx-border-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carepoint.controller.CustomerViewFormController">
+   <children>
+      <AnchorPane fx:id="customerWindowA2" layoutX="24.0" layoutY="81.0" prefHeight="261.0" prefWidth="1046.0" style="-fx-background-color: linear-gradient(to top,#86c6e3,#adc3da,#dfe0e0); -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="95.0" layoutY="31.0" prefHeight="25.0" prefWidth="101.0" styleClass="lbl" stylesheets="@../Stylesheet/stylesheet.css" text="Customer Id">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCustomerId" layoutX="257.0" layoutY="31.0" onAction="#txtCustomerIdOnAction" prefHeight="25.0" prefWidth="204.0" styleClass="text-field" stylesheets="@../Stylesheet/stylesheet.css" />
+            <Label layoutX="95.0" layoutY="85.0" prefHeight="23.0" prefWidth="78.0" styleClass="lbl" stylesheets="@../Stylesheet/stylesheet.css" text="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddress" layoutX="257.0" layoutY="85.0" onAction="#txtAddressOnAction" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="25.0" prefWidth="204.0" />
+            <Label layoutX="95.0" layoutY="140.0" prefHeight="25.0" prefWidth="128.0" styleClass="lbl" stylesheets="@../Stylesheet/stylesheet.css" text="Contact Number">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtContactNumber" layoutX="257.0" layoutY="140.0" onAction="#txtContactNumberOnAction" onKeyReleased="#txtContactOnKeyReleased" prefHeight="25.0" prefWidth="204.0" />
+            <Label layoutX="667.0" layoutY="31.0" prefHeight="23.0" prefWidth="78.0" styleClass="lbl" stylesheets="@../Stylesheet/stylesheet.css" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="667.0" layoutY="85.0" prefHeight="23.0" prefWidth="78.0" styleClass="lbl" stylesheets="@../Stylesheet/stylesheet.css" text="Age">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="754.0" layoutY="31.0" onAction="#txtNameOnAction" onKeyReleased="#txtNameOnKeyReleased" prefHeight="25.0" prefWidth="204.0" />
+            <TextField fx:id="txtAge" layoutX="754.0" layoutY="85.0" onAction="#txtAgeOnAction" onKeyReleased="#txtAgeOnKeyReleased" prefHeight="25.0" prefWidth="204.0" />
+            <Button fx:id="btnAdd" layoutX="74.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #394867; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="223.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #394867; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="368.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #394867; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearch" layoutX="519.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #394867; -fx-background-radius: 20;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCustomerReport" layoutX="850.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnCustomerReportOnAction" prefHeight="33.0" prefWidth="108.0" style="-fx-background-radius: 20; -fx-background-color: #9BA4B5;" text="Get Report">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="61.0" prefHeight="46.0" prefWidth="291.0" text="Customer">
+         <font>
+            <Font size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#005380" />
+                  <Stop color="#005380" offset="0.7680214875380179" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="TabaleCustomer" layoutX="20.0" layoutY="380.0" prefHeight="254.0" prefWidth="1054.0" style="-fx-background-radius: 20; -fx-background-color: #9BA4B5; -fx-border-color: #212A3E;">
+        <columns>
+          <TableColumn fx:id="ColCustomerId" prefWidth="181.33334350585938" text="NIC" />
+          <TableColumn fx:id="ColName" prefWidth="205.66665649414062" text="Name" />
+            <TableColumn fx:id="ColAddress" minWidth="8.0" prefWidth="178.0" text="Address" />
+            <TableColumn fx:id="ColAge" prefWidth="150.0" text="Age" />
+            <TableColumn fx:id="ColContact" prefWidth="211.0" text="Contact Number" />
+            <TableColumn fx:id="ColAction" prefWidth="126.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
